@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- # yapmamızın sebebi id si header olanlara bunu uygula demek
+        #header { 
+            font-size: 45px;
+            color: red;
+        }-->
+
+    <!-- . yapmamızın sebebi css de classlar icin nokta kullanılıyor olması
+             .course {
+        color: blue;
+        -->
+
+    <style>
+      #header {
+        font-size: 45px;
+        color: red;
+      }
+      .course h2 {
+        color: blue;
+      }
+      .course.angular {
+        background-color: rgb(0, 247, 255);
+      }
+
+      #username {
+        border: 1px solid red;
+      }
+
+      input[type="text"] {
+        padding: 30px;
+      }
+      input[type="password"] {
+        padding: 20px;
+      }
+      #submit {
+        color: red;
+      }
+    </style>
+    <!--padding=>kutucugun boyutunu ayarlamamızı saglar
+    border=>kutu cizgi rengini ayarlar-->
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="header">Kurslar</h1>
+      <hr />
+      <!-- hr->cizgi cekmek icin-->
+      <div class="course python">
+        <h2>Python Kursu</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          fuga!
+        </p>
+      </div>
+      <div class="course angular">
+        <!-- div->Bolum-->
+        <h2>Angular Kursu</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          fuga!
+        </p>
+      </div>
+      <div class="course javascript">
+        <h2>JavaScript Kursu</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          fuga!
+        </p>
+      </div>
+      <div>
+        <form>
+          Username:<input
+            type="text"
+            name="username"
+            id="username"
+          /><br /><!--br->bir satır asagıya indirmek icin-->
+          Password:
+          <input type="password" name="password" id="password" /><br />
+          <input type="submit" value="Login" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
